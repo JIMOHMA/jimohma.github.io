@@ -5,7 +5,7 @@ This is the latest version of my website.
 The base is an open-source Jekyll theme, which has been modified, adapted and incorporated with JQuery and Node.js for some simplistic beauty.
 
 
-### Check out: https://muyideen.com
+### Check out: https://www.muyideen.com
 #### SSL Certified and Cloudflare Protected!
 
 
