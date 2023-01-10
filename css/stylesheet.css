@@ -1,0 +1,1922 @@
+@charset "utf-8";
+/*-------------------------------------------------------*/
+* {
+  box-sizing: border-box;
+}
+html * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/*-------------------------------------------------------*/
+/* FONTS: START */
+
+/** Regular */
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 400;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+}
+
+/** Medium */
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 500;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-medium-webfont.woff");
+}
+
+/** Semi Bold */
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 600;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-semibold-webfont.woff");
+}
+
+/** Bold */ 
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 700;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.woff");
+}
+
+
+
+
+/* Charter */
+ @font-face {
+   font-family: 'Charter';
+   src: url('../fonts/charter/charter_bold_italic-webfont.eot');
+   src: url('../fonts/charter/charter_bold_italic-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/charter/charter_bold_italic-webfont.woff') format('woff');
+   font-weight: bold;
+   font-style: italic;
+}
+ @font-face {
+   font-family: 'Charter';
+   src: url('../fonts/charter/charter_bold-webfont.eot');
+   src: url('../fonts/charter/charter_bold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/charter/charter_bold-webfont.woff') format('woff');
+   font-weight: bold;
+   font-style: normal;
+}
+ @font-face {
+   font-family: 'Charter';
+   src: url('../fonts/charter/charter_italic-webfont.eot');
+   src: url('../fonts/charter/charter_italic-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/charter/charter_italic-webfont.woff') format('woff');
+   font-weight: normal;
+   font-style: italic;
+}
+ @font-face {
+   font-family: 'Charter';
+   src: url('../fonts/charter/charter_regular-webfont.eot');
+   src: url('../fonts/charter/charter_regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/charter/charter_regular-webfont.woff') format('woff');
+   font-weight: normal;
+   font-style: normal;
+}
+/* SF Mono */
+ @font-face {
+   font-family: "SF Mono";
+   font-weight: 200;
+   font-style: normal;
+   src: url(../fonts/sf_mono/SFMono-Light.otf);
+}
+ @font-face {
+   font-family: "SF Mono";
+   font-weight: 200;
+   font-style: italic;
+   src: url(../fonts/sf_mono/SFMono-LightItalic.otf);
+}
+ @font-face {
+   font-family: "SF Mono";
+   font-weight: 400;
+   font-style: normal;
+   src: url(../fonts/sf_mono/SFMono-Regular.otf);
+}
+ @font-face {
+   font-family: "SF Mono";
+   font-weight: 400;
+   font-style: italic;
+   src: url(../fonts/sf_mono/SFMono-RegularItalic.otf);
+}
+ @font-face {
+   font-family: "SF Mono";
+   font-weight: 500;
+   font-style: normal;
+   src: url(../fonts/sf_mono/SFMono-Medium.otf);
+}
+ @font-face {
+   font-family: "SF Mono";
+   font-weight: 500;
+   font-style: italic;
+   src: url(../fonts/sf_mono/SFMono-MediumItalic.otf);
+}
+ @font-face {
+   font-family: "SF Mono";
+   font-weight: 600;
+   font-style: normal;
+   src: url(../fonts/sf_mono/SFMono-Semibold.otf);
+}
+ @font-face {
+   font-family: "SF Mono";
+   font-weight: 600;
+   font-style: italic;
+   src: url(../fonts/sf_mono/SFMono-SemiboldItalic.otf);
+}
+ @font-face {
+   font-family: "SF Mono";
+   font-weight: 700;
+   font-style: normal;
+   src: url(../fonts/sf_mono/SFMono-Bold.otf);
+}
+ @font-face {
+   font-family: "SF Mono";
+   font-weight: 700;
+   font-style: italic;
+   src: url(../fonts/sf_mono/SFMono-BoldItalic.otf);
+}
+ @font-face {
+   font-family: "SF Mono";
+   font-weight: 800;
+   font-style: normal;
+   src: url(../fonts/sf_mono/SFMono-Heavy.otf);
+}
+ @font-face {
+   font-family: "SF Mono";
+   font-weight: 800;
+   font-style: italic;
+   src: url(../fonts/sf_mono/SFMono-HeavyItalic.otf);
+}
+/* FONTS: END */
+/* TEST: PASS */
+
+
+@font-face {
+    font-family: 'SummitThin-SolidTwo';
+    src: url('../fonts/summit/SummitThin-SolidTwo.woff2') format('woff2'),
+        url('../fonts/summit/SummitThin-SolidTwo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SummitRegular-Solid';
+    src: url('../fonts/summit/SummitRegular-Solid.woff2') format('woff2'),
+        url('../fonts/summit/SummitRegular-Solid.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SummitMedium-Shadow';
+    src: url('../fonts/summit/SummitMedium-Shadow.woff2') format('woff2'),
+        url('../fonts/summit/SummitMedium-Shadow.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SummitLight-SolidOne';
+    src: url('../fonts/summit/SummitLight-SolidOne.woff2') format('woff2'),
+        url('../fonts/summit/SummitLight-SolidOne.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SummitThin-InlineTwo';
+    src: url('../fonts/summit/SummitThin-InlineTwo.woff2') format('woff2'),
+        url('../fonts/summit/SummitThin-InlineTwo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SummitThin-InlineThree';
+    src: url('../fonts/summit/SummitThin-InlineThree.woff2') format('woff2'),
+        url('../fonts/summit/SummitThin-InlineThree.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SummitRegular-SolidTwo';
+    src: url('../fonts/summit/SummitRegular-SolidTwo.woff2') format('woff2'),
+        url('../fonts/summit/SummitRegular-SolidTwo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SummitBold-Solid';
+    src: url('../fonts/summit/SummitBold-Solid.woff2') format('woff2'),
+        url('../fonts/summit/SummitBold-Solid.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SummitMedium-Inline';
+    src: url('../fonts/summit/SummitMedium-Inline.woff2') format('woff2'),
+        url('../fonts/summit/SummitMedium-Inline.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SummitLight-InlineTwo';
+    src: url('../fonts/summit/SummitLight-InlineTwo.woff2') format('woff2'),
+        url('../fonts/summit/SummitLight-InlineTwo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SummitMedium-Display';
+    src: url('../fonts/summit/SummitMedium-Display.woff2') format('woff2'),
+        url('../fonts/summit/SummitMedium-Display.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SummitThin-Display';
+    src: url('../fonts/summit/SummitThin-Display.woff2') format('woff2'),
+        url('../fonts/summit/SummitThin-Display.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SummitBold-Inline';
+    src: url('../fonts/summit/SummitBold-Inline.woff2') format('woff2'),
+        url('../fonts/summit/SummitBold-Inline.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SummitBold-SolidOne';
+    src: url('../fonts/summit/SummitBold-SolidOne.woff2') format('woff2'),
+        url('../fonts/summit/SummitBold-SolidOne.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SummitThin-SolidOne';
+    src: url('../fonts/summit/SummitThin-SolidOne.woff2') format('woff2'),
+        url('../fonts/summit/SummitThin-SolidOne.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SummitBold-InlineOne';
+    src: url('../fonts/summit/SummitBold-InlineOne.woff2') format('woff2'),
+        url('../fonts/summit/SummitBold-InlineOne.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SummitLight-Shadow';
+    src: url('../fonts/summit/SummitLight-Shadow.woff2') format('woff2'),
+        url('../fonts/summit/SummitLight-Shadow.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SummitThin-Inline';
+    src: url('../fonts/summit/SummitThin-Inline.woff2') format('woff2'),
+        url('../fonts/summit/SummitThin-Inline.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SummitRegular-InlineTwo';
+    src: url('../fonts/summit/SummitRegular-InlineTwo.woff2') format('woff2'),
+        url('../fonts/summit/SummitRegular-InlineTwo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SummitBold-SolidThree';
+    src: url('../fonts/summit/SummitBold-SolidThree.woff2') format('woff2'),
+        url('../fonts/summit/SummitBold-SolidThree.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SummitRegular-SolidThree';
+    src: url('../fonts/summit/SummitRegular-SolidThree.woff2') format('woff2'),
+        url('../fonts/summit/SummitRegular-SolidThree.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SummitBold-Shadow';
+    src: url('../fonts/summit/SummitBold-Shadow.woff2') format('woff2'),
+        url('../fonts/summit/SummitBold-Shadow.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SummitLight-Display';
+    src: url('../fonts/summit/SummitLight-Display.woff2') format('woff2'),
+        url('../fonts/summit/SummitLight-Display.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SummitBold-InlineTwo';
+    src: url('../fonts/summit/SummitBold-InlineTwo.woff2') format('woff2'),
+        url('../fonts/summit/SummitBold-InlineTwo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SummitLight-Inline';
+    src: url('../fonts/summit/SummitLight-Inline.woff2') format('woff2'),
+        url('../fonts/summit/SummitLight-Inline.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SummitMedium-InlineTwo';
+    src: url('../fonts/summit/SummitMedium-InlineTwo.woff2') format('woff2'),
+        url('../fonts/summit/SummitMedium-InlineTwo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SummitBold-SolidTwo';
+    src: url('../fonts/summit/SummitBold-SolidTwo.woff2') format('woff2'),
+        url('../fonts/summit/SummitBold-SolidTwo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SummitMedium-SolidOne';
+    src: url('../fonts/summit/SummitMedium-SolidOne.woff2') format('woff2'),
+        url('../fonts/summit/SummitMedium-SolidOne.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SummitThin-Shadow';
+    src: url('../fonts/summit/SummitThin-Shadow.woff2') format('woff2'),
+        url('../fonts/summit/SummitThin-Shadow.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SummitLight-SolidTwo';
+    src: url('../fonts/summit/SummitLight-SolidTwo.woff2') format('woff2'),
+        url('../fonts/summit/SummitLight-SolidTwo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SummitThin-SolidThree';
+    src: url('../fonts/summit/SummitThin-SolidThree.woff2') format('woff2'),
+        url('../fonts/summit/SummitThin-SolidThree.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SummitMedium-SolidTwo';
+    src: url('../fonts/summit/SummitMedium-SolidTwo.woff2') format('woff2'),
+        url('../fonts/summit/SummitMedium-SolidTwo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SummitRegular-SolidOne';
+    src: url('../fonts/summit/SummitRegular-SolidOne.woff2') format('woff2'),
+        url('../fonts/summit/SummitRegular-SolidOne.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SummitLight-InlineThree';
+    src: url('../fonts/summit/SummitLight-InlineThree.woff2') format('woff2'),
+        url('../fonts/summit/SummitLight-InlineThree.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SummitRegular-Display';
+    src: url('../fonts/summit/SummitRegular-Display.woff2') format('woff2'),
+        url('../fonts/summit/SummitRegular-Display.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SummitRegular-InlineOne';
+    src: url('../fonts/summit/SummitRegular-InlineOne.woff2') format('woff2'),
+        url('../fonts/summit/SummitRegular-InlineOne.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SummitLight-InlineOne';
+    src: url('../fonts/summit/SummitLight-InlineOne.woff2') format('woff2'),
+        url('../fonts/summit/SummitLight-InlineOne.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SummitLight-SolidThree';
+    src: url('../fonts/summit/SummitLight-SolidThree.woff2') format('woff2'),
+        url('../fonts/summit/SummitLight-SolidThree.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SummitBold-InlineThree';
+    src: url('../fonts/summit/SummitBold-InlineThree.woff2') format('woff2'),
+        url('../fonts/summit/SummitBold-InlineThree.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SummitRegular-InlineThree';
+    src: url('../fonts/summit/SummitRegular-InlineThree.woff2') format('woff2'),
+        url('../fonts/summit/SummitRegular-InlineThree.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SummitRegular-Shadow';
+    src: url('../fonts/summit/SummitRegular-Shadow.woff2') format('woff2'),
+        url('../fonts/summit/SummitRegular-Shadow.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SummitThin-InlineOne';
+    src: url('../fonts/summit/SummitThin-InlineOne.woff2') format('woff2'),
+        url('../fonts/summit/SummitThin-InlineOne.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SummitMedium-InlineThree';
+    src: url('../fonts/summit/SummitMedium-InlineThree.woff2') format('woff2'),
+        url('../fonts/summit/SummitMedium-InlineThree.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SummitThin-Solid';
+    src: url('../fonts/summit/SummitThin-Solid.woff2') format('woff2'),
+        url('../fonts/summit/SummitThin-Solid.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SummitRegular-Inline';
+    src: url('../fonts/summit/SummitRegular-Inline.woff2') format('woff2'),
+        url('../fonts/summit/SummitRegular-Inline.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SummitMedium-Solid';
+    src: url('../fonts/summit/SummitMedium-Solid.woff2') format('woff2'),
+        url('../fonts/summit/SummitMedium-Solid.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SummitLight-Solid';
+    src: url('../fonts/summit/SummitLight-Solid.woff2') format('woff2'),
+        url('../fonts/summit/SummitLight-Solid.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SummitMedium-InlineOne';
+    src: url('../fonts/summit/SummitMedium-InlineOne.woff2') format('woff2'),
+        url('../fonts/summit/SummitMedium-InlineOne.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SummitMedium-SolidThree';
+    src: url('../fonts/summit/SummitMedium-SolidThree.woff2') format('woff2'),
+        url('../fonts/summit/SummitMedium-SolidThree.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SummitBold-Display';
+    src: url('../fonts/summit/SummitBold-Display.woff2') format('woff2'),
+        url('../fonts/summit/SummitBold-Display.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+/*------------------------------------------*/
+
+/*-------------------------------------------------------*/
+/* BODY and HTML Default*/
+ html, body {
+   min-height: 100vh;
+}
+body, h1, h2, h3, p {
+    -webkit-font-smoothing: antialiased !important;
+    -moz-osx-font-smoothing: grayscale !important;
+    -webkit-backface-visibility: hidden !important;
+}
+
+
+
+/* Fixes the fonting for the entire website */
+ body {
+   padding: 0;
+   margin: 0;
+   overflow-x: hidden;
+   font-family: "SF Mono", "Lucida Console", Monaco, monospace;
+   font-weight: 200;
+   font-size: 17px;
+}
+
+.section-head {
+  font-size: 55px;
+  font-family: 'SummitBold-Inline';
+  font-weight: normal;
+  font-style: normal;
+  display: block;
+}
+/*-------------------------------------------------------*/
+/* home-body.html styling */
+
+.experience {
+   position: relative;
+   padding-top: 5vh;
+   padding-bottom: 5vh;
+   min-height: 75vh;
+   background: #0a192f;
+   color: #fff;
+}
+
+.experience .wrapper2 {
+   display:flex;
+   align-items:flex-start;
+   width: 100%;
+   height: 100%;
+}
+
+.exp-img-container {
+  display: inline-block;
+  vertical-align:middle;
+  width: 15%;
+  max-width: 120px;
+  min-width: 50px;
+  margin-left: 5%;
+}
+
+.exp-container {
+  display: inline-block;
+  width:85%;
+  padding-left: 5%;
+}
+
+.where-loc {
+  color: #64ffda;
+  font-family: 'SummitRegular-Solid';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 16px;
+  border: 1px solid #64ffda;
+  display:inline-block;
+  padding: 2px 2px 2px 2px;
+}
+
+.where-txt {
+  color: #57CBFF;
+  display:inline-block;
+}
+
+.overlay-text {
+  font-family: "SummitBold-Shadow";
+  color: #64ffda;
+  font-size: 50px;
+  position:relative;
+}
+.overlay-text::before {
+  font-family: "SummitBold-Solid";
+  color: #fff;
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.exp-text {
+  font-family: "San Francisco", "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Roboto, Calibre;
+  color: #64ffda;
+  font-size: 22px;
+  font-weight: 500;
+  position:relative;
+}
+.exp-text::before {
+  font-family: inherit;
+  color: rgb(204, 214, 246);
+  content: attr(data-text);
+  position: relative;
+}
+
+.exp-text::after {
+  font-family: "SF Mono", "Lucida Console", Monaco, monospace;
+  font-size: 13px;
+  color: rgb(168, 178, 209);
+  content: attr(date-text);
+  display: block;
+  margin-bottom: 30px;
+}
+
+
+/*------------*/
+
+.timeline > ul {
+  margin-top: 0;
+  padding-left: 38px;
+}
+
+.timeline > ul > li {
+  list-style-type: none;
+  position: relative;
+  width: 3px;
+  padding-top: 25px;
+  background: #64ffda; /* long line */
+}
+ 
+.timeline > ul > li::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #cee0d0;
+}
+
+.timeline > ul > li .time-div {
+  position: relative;
+  bottom: 0;
+  width: 70vw;
+  max-width: 800px;
+  padding: 15px;
+  padding-left: 0;
+  border-radius: 10px;
+  border-left: 15px solid #202D41;
+  left: 45px;
+}
+ 
+.timeline > ul > li .time-div::before {
+  content: '';
+  position: absolute;
+  bottom: 4px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  left: -13.5px;
+  border-radius: 6px;
+  border-width: 6px 12px 6px 0;
+  border-color: transparent #378C77 transparent transparent;
+}
+
+.timeline > ul > li::after {
+  background: #64ffda;
+  transition: background .5s ease-in-out;
+}
+ 
+.timeline > ul > li.in-view::after {
+  background: #378C77; /* circle color after */
+}
+ 
+.timeline > ul > li .time-div {
+  visibility: hidden;
+  opacity: 0;
+  transition: all .5s ease-in-out;
+}
+ 
+.timeline > ul > li .time-div {
+  transform: translate3d(200px,0,0);
+}
+ 
+.timeline > ul > li.in-view .time-div {
+  transform: none;
+  visibility: visible;
+  opacity: 1;
+}
+/* -------------------------- */
+.timeline ul li ul {
+  font-family: "San Francisco", "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Roboto, Calibre;
+  line-height: 1.3;
+  padding: 0;
+  margin: 0;
+}
+
+.timeline ul li ul li {
+  color: rgb(136, 146, 176);
+  font-size: 18px;
+  margin-bottom: 10px;
+  list-style-type: none;
+  position: relative;
+  padding-left: 30px;
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+
+.timeline ul li ul li::before {
+  content: "▹";
+  position: absolute;
+  left: 0px;
+  color: rgb(100, 255, 218);
+  line-height: 20px;
+  margin-right: 15px;
+}
+/*------------*/
+
+/*-------------------------------------------------------*/
+
+
+.education {
+   position: relative;
+   padding-top: 20px; 
+   padding-bottom: 20px;
+   min-height: 130vh;
+   color: #413e3a;
+   background: #fffff2;
+}
+
+.what-loc {
+  color: #50182e;
+  font-family: 'SummitRegular-Solid';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 16px;
+  border: 1px solid #50182e;
+  display:inline-block;
+  padding: 2px 2px 2px 2px;
+  margin-bottom: 5%;
+}
+
+.what-txt {
+  color: #5e6692;
+  display:inline-block;
+}
+
+.ed-img-container {
+  max-width: 150px;
+  width:20%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-filter: drop-shadow(0 1px 2px rgba(0,0,0,.5));
+  -moz-filter: drop-shadow(0 1px 2px rgba(0,0,0,.5));
+  -ms-filter: drop-shadow(0 1px 2px rgba(0,0,0,.5));
+  -o-filter: drop-shadow(0 1px 2px rgba(0,0,0,.5));
+  filter: drop-shadow(0 1px 2px rgba(0,0,0,.5));
+}
+
+.education .wrapper2 {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   font-family: "San Francisco", "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Roboto, Calibre;
+   font-size: 18px;
+}
+
+.ed-container {
+  border: 2px solid #d9dde0;
+  padding: 8px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.ed-vertical {
+  width: 2px;
+  height: 80px;
+  background: #909497;
+  border: none;
+}
+
+.ed-vertical1 {
+  width: 2px;
+  height: 80px;
+  background: #909497;
+  border: none;
+}
+
+.ed-vertical2 {
+  width: 2px;
+  height: 40px;
+  background: #909497;
+  border: none;
+}
+
+.ed-date {
+  color: #818487;
+  font-family: "SF Mono", "Lucida Console", Monaco, monospace;
+  font-size: 16px;
+
+}
+
+.ed-courses {
+  padding: 8px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width:80%;
+}
+
+.ed-course {
+  border: 2px solid #d9dde0;
+  padding: 4px;
+  border-radius: 5px;
+  margin:5px;
+}
+
+.ed-course:hover {
+  border: 2px solid #1f1c17;
+  background: #e8e9dc;
+
+}
+
+
+
+
+/*-------------------------------------------------------*/
+.projects {
+   position: relative;
+   background: #1f1c17;
+   padding-top: 20px; 
+   padding-bottom: 20px;
+   min-height: 130vh;
+   color: #e0cd95;
+}
+
+.projects .wrapper2 {
+   display: flex;
+   flex-direction: column;
+   width:100%;
+   color: #fffff2;
+}
+
+.built-loc {
+  color: #e0613f;
+  font-family: 'SummitRegular-Solid';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 16px;
+  border: 1px solid #e0613f;
+  display:inline-block;
+  padding: 2px 2px 2px 2px;
+  margin-bottom: 5%;
+}
+
+.built-txt {
+  color: #fffff2;
+  display:inline-block;
+}
+
+.project-l {
+  border-radius: 3px;
+  padding: 10px;
+  margin: 5px;
+  margin-bottom: 10vh;
+  width:100%;
+  /*display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;*/
+}
+
+.project-r {
+  /*border: 2px solid #e0cd95;*/
+  border-radius: 3px;
+  padding: 10px;
+  margin: 5px;
+  margin-bottom: 10vh;
+  width:100%;
+  /*display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;*/
+}
+
+
+
+.proj-header {
+  width: 15%;
+  position: relative;
+  vertical-align:middle;
+  display: inline-block;
+  z-index: 3;
+}
+
+.project-mainimage {
+  width:100%;
+  height: auto;
+  z-index: 1;
+  background: #1f1c17;
+  border-radius:50%;
+  -moz-border-radius:50%;
+  -webkit-border-radius:50%;
+}
+
+.project-title {
+  color: #e0613f;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 5px 5px 5px 5px;
+  border: 1px solid #e0613f;
+  border-radius: 5px;
+  background: rgba(31,28,23,0.85);
+  position: absolute;  
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+}
+
+.project-img-r {
+  width:60%;
+  height:auto;
+  z-index: 1;
+  border-radius: 5px;
+  opacity: 0.9;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+  position: relative;
+  display:inline-block;
+  vertical-align:middle;
+  margin-left: -27.25%;
+  right:0;
+}
+
+.project-img-l {
+  width:60%;
+  height:auto;
+  z-index: 1;
+  border-radius: 5px;
+  opacity: 0.9;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+  position: relative;
+  display:inline-block;
+  vertical-align:middle;
+  margin-right: -27.25%;
+  right:0;
+}
+
+.project-img-l:hover, .project-img-r:hover {
+  opacity: 1;
+  -webkit-filter: drop-shadow(0 0px 4px rgba(0,0,0,.5));
+  -moz-filter: drop-shadow(0 0px 4px rgba(0,0,0,.5));
+  -ms-filter: drop-shadow(0 0px 4px rgba(0,0,0,.5));
+  -o-filter: drop-shadow(0 0px 4px rgba(0,0,0,.5));
+  filter: drop-shadow(0 0px 4px rgba(0,0,0,.5));
+}
+
+
+
+.project-body-l {
+  width:50%;
+  border: 1px solid #e0cd95;
+  padding-left: 10%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 10px;
+  border-radius: 5px;
+  background: rgba(56,52,47,0.9);
+  z-index: 2;
+  position: relative;
+  vertical-align:middle;
+  display:inline-block;
+  transform: translateX(-17.3%);
+}
+
+
+.project-body-r {
+  width:50%;
+  border: 1px solid #e0cd95;
+  padding-right: 10%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 10px;
+  border-radius: 5px;
+  background: rgba(56,52,47,0.9);
+  z-index: 2;
+  position: relative;
+  vertical-align:middle;
+  display:inline-block;
+  transform: translateX(17.3%);
+}
+
+.proj-header-body{
+  vertical-align: middle;
+  position: relative;
+  width: 100%;
+}
+
+.proj-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  flex-direction: row;
+}
+
+.proj-gallery-img {
+  width: 45%;
+  height: auto;
+  margin: 2.5%;
+}
+
+.img-tmp1 {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+
+
+/*-------------------------------------------------------*/
+.skills {
+   position: relative;
+   background: #fffff2; /*B0C6CE*/
+   padding-top: 20px; 
+   padding-bottom: 20px;
+   min-height: 130vh;
+   color: #05204A;
+}
+
+.skills .wrapper2 {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   font-family: "San Francisco", "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Roboto, Calibre;
+   font-size: 18px;
+}
+
+.tech-loc {
+  color: #E94F37; 
+  font-family: 'SummitRegular-Solid', Roboto, Calibre;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 16px;
+  border: 1px solid #E94F37; /* good alternative: 383961 and 383961 */
+  display:inline-block;
+  padding: 2px 2px 2px 2px;
+  margin-bottom: 5%;
+}
+
+.tech-txt {
+  color: #212922;
+  display:inline-block;
+}
+
+.skills-container {
+  padding: 8px;
+  text-align: center;
+}
+
+.skill-title {
+  color: #36558F;
+  font-family: 'SummitBold-Solid', Roboto, Calibre;
+  border: 2px solid #8ba9ed;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.skills-icons {
+  width: 15%;
+  min-width:100px;
+  margin: 10px;
+  height: auto;
+  display: inline-block;
+  -webkit-filter: drop-shadow(0 0px 4px rgba(0,0,0,.5));
+  -moz-filter: drop-shadow(0 0px 4px rgba(0,0,0,.5));
+  -ms-filter: drop-shadow(0 0px 4px rgba(0,0,0,.5));
+  -o-filter: drop-shadow(0 0px 4px rgba(0,0,0,.5));
+  filter: drop-shadow(0 0px 4px rgba(0,0,0,.5));
+}
+/*-------------------------------------------------------*/
+
+
+.design {
+   position: relative;
+   padding-top: 20px; 
+   padding-bottom: 20px;
+   min-height: 130vh;
+   background: #B0C6CE;
+   color: #50514F;
+}
+
+.design .wrapper2 {
+   display: flex;
+   flex-wrap: wrap;
+   align-items: flex-start;
+   flex-direction: row;
+   justify-content: center;
+
+   margin-top: 3vh;
+   height: 100%;
+   width: 100%;
+   margin-bottom: 5vh;
+}
+
+.design-image-1 {
+  width: 30%;
+  height: auto;
+  margin: 1%;
+}
+
+.img-tmp1 {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.design-head {
+  margin-top: 3vh;
+  font-family: "San Francisco", "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Roboto, Calibre;
+  width: 60%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.design-loc {
+  color: #D17B0F; 
+  font-family: 'SummitRegular-Solid', Roboto, Calibre;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 16px;
+  border: 1px solid #D17B0F;
+  display:inline-block;
+  padding: 2px 2px 2px 2px;
+  margin-bottom: 5%;
+}
+
+.design-txt {
+  color: #50514F;
+  display:inline-block;
+}
+/*-------------------------------------------------------*/
+
+.about-me {
+   position: relative;
+   padding-top: 20px; 
+   padding-bottom: 20px;
+   min-height: 130vh;
+   background: #fcfaf9;
+   color: #444444;
+   min-height: 130vh;
+}
+
+.about-me .wrapper2 {
+  width: 80%;
+  font-family: "San Francisco", "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Roboto, Calibre;
+  height: 100%;
+  
+  margin: 0 auto;
+}
+
+.about-me .my-pic {
+  width: 20%;
+  height: auto;
+  float: right;
+  margin-left: 15%;
+}
+
+.ame-title {
+  color: #e0613f;
+  font-family: 'SummitRegular-Solid';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 16px;
+  border: 1px solid #e0613f;
+  display:inline-block;
+  padding: 2px 2px 2px 2px;
+  margin-top: 5%;
+}
+/*-------------------------------------------------------*/
+
+
+.epilogue {
+   position: relative;
+   padding-top: 20px; 
+   padding-bottom: 20px;
+   min-height: 130vh;
+   background: #EFDFBB;
+}
+
+.epilogue .wrapper2 {
+   width: 90%;
+   height: 100%;
+   margin: 0 auto;
+   background: #fff;
+   padding: 10%;
+   border-radius: 10px;
+}
+
+.signature {
+  width: 40%;
+  height: auto;
+}
+
+
+/*-------------------------------------------------------*/
+.pre-footer {
+  font-size: 3vw;
+  height: 40vh;
+  font-family: 'SummitBold-Inline';
+  font-weight: normal;
+  font-style: normal;
+  color: #53ffda;
+}
+
+
+
+/*-------------------------------------------------------*/
+/* RANDOM CSS */
+ a:focus {
+   outline: 0;
+}
+a {
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.5s;
+}
+ .container {
+   margin: auto;
+   max-width: 1200px;
+}
+ .vertical-align {
+   position: relative;
+   top: 50%;
+   transform: translateY(-50%);
+}
+ .wrapper {
+   max-width: 980px;
+   margin: auto;
+}
+ @media (max-width: 1050px) {
+   .wrapper {
+     margin: 0 30px;
+  }
+}
+ .small-wrapper {
+   max-width: 800px;
+   margin: auto;
+}
+ .center-align {
+   text-align: center;
+}
+ .right-align {
+   text-align: right;
+}
+ .center-align-obj {
+  text-align: center;
+  display: block;
+ }
+ .small {
+   font-size: 25px;
+}
+ .section-link {
+   color: #b93838;
+   text-decoration: none;
+   border-bottom: 5px solid #b93838;
+}
+ .block-link {
+   display: block;
+   text-decoration: none;
+}
+
+ .resume-download {
+   color: #e1e1e1;
+   text-decoration: none;
+   background: #598daa;
+   padding-bottom: 3px;
+   padding-top: 2px;
+}
+
+ .basic-header {
+   background: #18212d;
+   padding-top: 20px;
+   z-index: 3;
+   padding-bottom: 20px;
+}
+
+.basic-header img:hover {
+   -webkit-filter: brightness(70%);
+   filter: brightness(70%);
+}
+
+ .basic-logo-container {
+   display: block;
+   width: 100px;
+   padding-top: 0;
+   margin: 0 auto;
+}
+
+.basic-logo {
+   display: block;
+   width: 100px;
+   padding-top: 0;
+   margin: 0 auto;
+}
+
+ .resume-download a:hover {
+   opacity: 0.5;
+}
+
+/* RANDOM END */
+/*-------------------------------------------------------*/
+/* HEADER CSS BEGIN: */
+ .landing-header {
+   position: relative;
+   background: rgba(24, 33, 45, 0.8);
+   padding-top: 20px;
+   z-index: 3;
+}
+
+ .landing-header .wrapper {
+   display: flex;
+   flex-direction: row;
+}
+ .landing-header .wrapper .left {
+   padding-right: 50px;
+}
+ .landing-header .wrapper .right {
+   border-left: 1px solid gray;
+   padding-left: 20px;
+   position: relative;
+}
+ .landing-header .wrapper .right .commit-history {
+   position: absolute;
+   bottom: 0;
+   font-size: 12px;
+   font-weight: 500;
+   line-height: 20px;
+   color: #e1e1e1;
+}
+ .landing-header .wrapper .right .commit-sha {
+   font-weight: 600;
+}
+ .landing-header .wrapper .right .commit-sha a {
+   text-decoration: none;
+   color: #eeeb80;
+}
+
+ .commit-sha:hover {
+   opacity: 0.8;
+   border-bottom: 1px dashed #989898;
+}
+
+ .landing-header .intro {
+   color: white;
+   font-weight: 400;
+   line-height: 23px;
+}
+ .landing-header .intro .intro-link {
+   text-decoration: none;
+   color: inherit;
+   transition: opacity 0.15s linear;
+}
+ .landing-header .intro .intro-link:hover {
+   opacity: 0.8;
+   border-bottom: 1px dashed #989898;
+}
+ .landing-header .intro .intro-emphasis {
+   font-weight: 500;
+}
+ .landing-header .intro .intro-emphasis:nth-of-type(6n+2) {
+   color: #5197e8;
+}
+ .landing-header .intro .intro-emphasis:nth-of-type(6n+3) {
+   color: #50e3c2;
+}
+ .landing-header .intro .intro-emphasis:nth-of-type(6n+4) {
+   color: #f5a623;
+}
+ .landing-header .intro .intro-emphasis:nth-of-type(6n+5) {
+   color: #f8e71c;
+}
+ .landing-header .intro .intro-emphasis:nth-of-type(6n+6) {
+   color: #db2fff;
+}
+ .landing-header .intro .intro-emphasis:nth-of-type(6n+7) {
+   color: #ff5757;
+}
+ .landing-header .intro .page-type, .landing-header .intro .page-tagline {
+   font-size: 17px;
+   font-weight: 500;
+}
+ .landing-header .intro .page-title {
+   font-size: 23px;
+   font-weight: 700;
+   margin: 3px 0 6px;
+}
+
+ .landing-header .logo, .landing-header .logo-container {
+   display: block;
+   width: 100px;
+   padding-top: 0;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+ .landing-header .header-nav-divider {
+   border: 0.5px solid gray;
+   margin: 10px 0 20px;
+   width: 30px;
+}
+ .landing-header ul.header-nav-list {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+}
+ .landing-header ul.header-nav-list li {
+   margin-bottom: 12px;
+   font-weight: 400;
+}
+ .landing-header ul.header-nav-list li a, .landing-header ul.header-nav-list li i {
+   color: white;
+}
+
+ ul.header-nav-list li a:hover {
+   opacity: 0.8;
+}
+
+ .landing-header img:hover {
+   -webkit-filter: brightness(70%);
+   filter: brightness(70%);
+}
+
+ .landing-header .wrapper .left {
+   flex: 2 0 0;
+}
+ .landing-header .wrapper .right {
+   flex: 1 0 0;
+}
+
+/*--------------------------*/
+/* media edits */
+/* 1080px */
+ @media (max-width: 1080px) {
+   .landing-header .intro {
+     font-size: 15px;
+     line-height: 21px;
+  }
+}
+ .landing-header {
+   padding-bottom: 20px;
+}
+ @media (max-width: 1080px) {
+   .landing-header ul.header-nav-list {
+     font-size: 15.5px;
+     line-height: 16px;
+  }
+}
+ @media (max-width: 1080px) {
+   .landing-header .logo {
+     width: 90px;
+  }
+   .landing-header .header-content {
+     font-size: 30px;
+  }
+}
+
+/*--------------------------*/
+/* 920px */
+@media (max-width: 920px
+ ) {
+   .landing-header .wrapper {
+     display: block;
+  }
+   .landing-header {
+   padding-bottom: 0px;
+  }
+  
+   .landing-header .wrapper .left {
+     padding-right: 0;
+  }
+   .landing-header .wrapper .right {
+     border-left: none;
+     padding-left: 0;
+     position: static;
+     font-size: 15.5px;
+     text-align: center;
+     padding-top: 13px;
+     padding-bottom: 0px;
+  }
+   .landing-header .wrapper .right .commit-history {
+     display: none;
+  }
+}
+ @media (max-width: 920px) {
+   .landing-header .logo, .landing-header .logo-container {
+     margin-bottom: 3px;
+  }
+}
+ @media (max-width: 920px) {
+   .landing-header li {
+     display: inline-block;
+     margin: 0 5px;
+  }
+   .landing-header li a {
+     color: #c7c9cc !important;
+  }
+   .landing-header .header-social-nav, .landing-header .header-nav-divider {
+     display: none;
+  }
+}
+
+/*--------------------------*/
+/* 720px */
+ @media (max-width: 720px) {
+   .landing-header .intro .page-title {
+     line-height: 26px;
+  }
+  .landing-header .wrapper .right {
+     padding-top: 13px;
+     padding-bottom: 0px;
+  }
+}
+
+/*--------------------------*/
+/* 570px */
+ @media (max-width: 570px) {
+   .landing-header .wrapper .right {
+     padding-top: 13px;
+     padding-bottom: 0px;
+  }
+}
+/* HEADER CSS END - TESTS: PASS */
+/*-------------------------------------------------------*/
+
+/* Header Bottop pic and typewriter:   height: 54vh; */ 
+/*-------------------------------------------------------*/
+.vid-overlay {
+    background: rgba(24, 33, 45, 0.8);
+}
+
+ .wrapper-pic {
+   max-width: 980px;
+   margin: auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+ @media (max-width: 1050px) {
+   .wrapper-pic {
+     margin: 0 30px;
+  }
+}
+
+ .profile-pic-container {
+    padding-left: 4%;
+    vertical-align:middle;
+ }
+
+ .profile-pic {
+   display: inline;
+   vertical-align:middle;
+   border-radius: 50%;
+   width: 30%;
+
+}
+
+#app {
+  margin: auto;
+  color: white;
+  font-weight: 400;
+  line-height: 23px;
+  font-size: 28px;
+  display: inline;
+  padding-left: 4%;
+}
+
+/*-------------------------------------------------------*/
+/* FOOTER CSS BEGIN: */
+/*-------------------------------------------------------*/
+ #footer {
+   position: relative;
+   font-size: 16px;
+   background-color: #0a192f;
+   z-index: 2;
+   padding-top: 20px;
+   padding-bottom: 10px;
+   color: white;
+}
+ #footer .footer-social {
+   margin: 0 10px;
+}
+ #footer .footer-group {
+   display: inline-block;
+   margin: 3px 0;
+}
+ @media (max-width: 700px) {
+   #footer .footer-left, #footer .footer-right {
+     float: none;
+     text-align: center;
+  }
+   #footer .footer-left {
+     font-size: 24px;
+     padding-bottom: 4px;
+  }
+   #footer .footer-right {
+     font-size: 20px;
+  }
+}
+ #footer .footer-clear {
+   clear: both;
+}
+ #footer .footer-name {
+   display: inline;
+   padding-right: 10px;
+}
+ #footer .footer-social-icons {
+   display: inline-block;
+   margin: 0 auto;
+}
+ #footer a {
+   color: white;
+   text-decoration: none;
+}
+ #footer .fa {
+   padding: 0 2px;
+}
+
+ .footer-group:hover {
+   opacity: 0.8;
+}
+
+/* FOOTER: RAINBOW */
+/*-------------------------------------------------------*/
+ .footer-rainbow {
+   display: flex;
+   width: 100%;
+   height: 10px;
+}
+ .footer-rainbow .rainbow-stripe {
+   flex: 1 0 auto;
+   height: 100%;
+}
+ .footer-rainbow .rainbow-stripe:nth-of-type(1) {
+   background: #d8d8d8;
+}
+ .footer-rainbow .rainbow-stripe:nth-of-type(2) {
+   background: #5197e8;
+}
+ .footer-rainbow .rainbow-stripe:nth-of-type(3) {
+   background: #50e3c2;
+}
+ .footer-rainbow .rainbow-stripe:nth-of-type(4) {
+   background: #f5a623;
+}
+ .footer-rainbow .rainbow-stripe:nth-of-type(5) {
+   background: #f8e71c;
+}
+ .footer-rainbow .rainbow-stripe:nth-of-type(6) {
+   background: #db2fff;
+}
+ .footer-rainbow .rainbow-stripe:nth-of-type(7) {
+   background: #ff5757;
+}
+/* Horizontal line (for footer) */
+ hr {
+   display: block;
+   height: 1px;
+   border: 0;
+   border-top: 1px solid #ccc;
+   margin: 1em 0;
+   padding: 0;
+   width: 30%;
+   margin-left: auto;
+   margin-right: auto;
+}
+/* END OF FOOTER CSS */
+/*-------------------------------------------------------*/
+ .vertical-spacer.spacer-tiny {
+   height: 4.5px;
+}
+ .vertical-spacer.spacer-small {
+   height: 9px;
+}
+ .vertical-spacer.spacer-medium {
+   height: 13.5px;
+}
+ .vertical-spacer.spacer-large {
+   height: 18px;
+}
+
+/*-------------------------------------------------------*/
+/* Jarallax Specific CSS */
+.jarallax {
+    position: relative;
+    z-index: 0;
+}
+
+.jarallax video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+  z-index: 0;
+}
+.jarallax > .jarallax-img {
+    position: absolute;
+    object-fit: cover;
+    /* support for plugin https://github.com/bfred-it/object-fit-images */
+    font-family: 'object-fit: cover;';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+/*-------------------------------------------------------*/
+
+ .chevron {
+  width: 100%;
+  position: absolute;
+  z-index:3;
+  top:95%;
+ }
+
+.arrow,
+.arrow:before {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+}
+
+.arrow {
+  width: 40px;
+  height: 40px;
+  top: 50%;
+  margin: -20px 0 0 -20px;
+  -webkit-transform: rotate(45deg);
+  border-left: none;
+  border-top: none;
+  border-right: 2px #FFF8E7 solid;
+  border-bottom: 2px #FFF8E7 solid;
+}
+
+.arrow:before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  top: 50%;
+  margin: -10px 0 0 -10px;
+  border-left: none;
+  border-top: none;
+  border-right: 1px #BDB76B solid;
+  border-bottom: 1px #BDB76B solid;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-name: arrow;
+}
+
+@keyframes arrow {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-10px, -10px);
+  }
+}
+
+@media screen and (max-width: 805px) {  
+  #app  {
+    font-size:25px;
+    }
+  }
+
+@media screen and (max-width: 705px) {  
+  #app  {
+    font-size:21.5px;
+    }
+  }
+
+@media screen and (max-width: 605px) {  
+  #app  {
+    font-size:17px;
+    }
+  }
+
+@media screen and (max-width: 505px) {  
+  #app  {
+    font-size:15.5px;
+    }
+  }
+
+@media screen and (max-width: 455px) {  
+  #app  {
+    font-size:14px;
+    } 
+  }
+
+@media screen and (max-width: 410px) {  
+  #app  {
+    font-size:13px;
+    } 
+  }
+
+@media screen and (max-width: 387px) {
+  #app  {
+    font-size:11px;
+    }
+  }
+
+@media screen and (max-width: 340px) {
+  #app  {
+    font-size:9.5px;
+    }
+  }
+
+@media screen and (max-width: 315px) {
+  #app  {
+    font-size:9px;
+    }
+  }
+
+@media screen and (max-width: 300px) {
+  #app  {
+    font-size:8.5px;
+    }
+  }
+  /*
+@media screen and (max-width: 900px) {  
+  #app  {
+    font-size:28px;
+    }
+  }
+@media screen and (max-width: 1000px){  
+  #app  {
+    font-size:28px;
+    }
+  }
+@media screen and (max-width: 1100px){  
+  #app  {
+    font-size:28px;
+    }
+  }
+@media screen and (max-width: 1200px){  
+  #app  { 
+    font-size:28px;
+    }
+  }
+  */

@@ -1,0 +1,23 @@
+title: Muyideen Jimoh
+email: mail4ayodele@gmail.com
+
+description: >-
+  Computer Sciece Graduate With A Focus on Software Development, Algorithms, and Automation
+
+baseurl: ""
+markdown: kramdown
+github_username: jimohma
+
+timezone: America/New_York
+repository: JIMOHMA/jimohma.github.io
+
+logo: /images/
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+seo:
+  name: Muyideen Jimoh
+  type: Person
+url: ""
